@@ -10,11 +10,15 @@ Answer the following questions clearly:
 
 
 1.
-getElementById: Retrives a single element useing unique id. Reurns null if no match found. It is fast and specific.
-getElementsByClassName: Retrives all elements with the class name.Reurns a live HTMLCollection or an empty collection if no match. Returns multiple elements, and the collection updates automatically if the DOM changes.
+### getElementById: 
+Retrives a single element useing unique id. Reurns null if no match found. It is fast and specific.
+### getElementsByClassName: 
+Retrives all elements with the class name.Reurns a live HTMLCollection or an empty collection if no match. Returns multiple elements, and the collection updates automatically if the DOM changes.
 
-querySelector: Retrives the first element that matches a css selector. Returns a single Element object of noll if no match is found. Flexible. Suppurts complex css selector.
-querySelectorAll: Retrives all elements that matches a css selector. Non-live(static) list. Supports all aspects of getElementsByClassName but with broader selector.
+### querySelector: 
+Retrives the first element that matches a css selector. Returns a single Element object of noll if no  match is found. Flexible. Suppurts complex css selector.
+### querySelectorAll: 
+Retrives all elements that matches a css selector. Non-live(static) list. Supports all aspects of getElementsByClassName but with broader selector.
 
 
 ------------------------------
@@ -44,8 +48,10 @@ It is usefull because it reduces the number of event listeners(less memory useag
 
 
 5.
-preventDefault(): (affects the event’s default action not propagation) Prevents the browser's default action for an event allowing the event to continue propagation. E.g. following link. submitting form.
+### preventDefault(): 
+(affects the event’s default action not propagation) Prevents the browser's default action for an ### event allowing the event to continue propagation. E.g. following link. submitting form.
 
-stopPropagation(): (affects the event’s propagation not default action) Stops the event from bubbleing up or capturing down the DOM tree. Prevents the event from triggering listeners on parent elements, but the default action still occurs.
+### stopPropagation(): 
+(affects the event’s propagation not default action) Stops the event from bubbleing up or capturing down the DOM tree. Prevents the event from triggering listeners on parent elements, but the default action still occurs.
 
 
