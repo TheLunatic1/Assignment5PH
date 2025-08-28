@@ -11,13 +11,16 @@ main {
 
 
 @media (min-width: 640px) and (max-width: 1900px) {
+
     .card-section {
         grid-template-columns: repeat(2, 1fr);
     }
+
     .card {
         width: 100%;
         height: auto;
     }
+
     .card button {
         width: 45%;
         height: 40px;
@@ -26,29 +29,36 @@ main {
 
 
 @media (min-width: 1901px) {
+
     body {
         width: 1901px;
         height: 1613px;
         margin: 0 auto;
     }
+
     main {
         width: 1800px;
         height: 1140px;
     }
+
     .card-section {
         width: 1370px;
         grid-template-columns: repeat(3, 1fr);
     }
+
     .history-section {
         width: 400px;
     }
+
     .card {
         width: 436.67px;
         height: 360px;
     }
+
     .card button {
         width: 182.33px;
         height: 40px;
     }
+    
 }
 
