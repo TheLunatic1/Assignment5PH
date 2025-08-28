@@ -7,7 +7,7 @@ Answer the following questions clearly:
 
 
 ------------------------------
-
+                          ------------------------------Answers------------------------------
 
 ### 1.
 ### getElementById: 
