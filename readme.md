@@ -5,7 +5,7 @@ Answer the following questions clearly:
 4. What is Event Delegation in JavaScript? Why is it useful?
 5. What is the difference between preventDefault() and stopPropagation() methods?
 
-
+------------------------------
 
 1.
 getElementById: Retrives a single element useing unique id. Reurns null if no match found. It is fast and specific.
