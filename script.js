@@ -57,39 +57,28 @@ function addToCallHistory(serviceName, number, time) {
     const history = document.getElementById('call-history');
     // call history-parent
     const entry = document.createElement('div');
-    entry.style.backgroundColor = '#FAFAFA';
-    entry.style.borderRadius = '8px';
-    entry.style.padding = '8px';
-    entry.style.display = 'flex';
-    entry.style.flexDirection = 'row';
-    entry.style.justifyContent = 'space-between';
-    entry.style.minHeight = '83px';
-    entry.style.alignItems = 'center';
+    entry.className = 'bg-[#FAFAFA] rounded-lg p-2 flex flex-row justify-between min-h-[83px] items-center';
 
     // service and number
     const leftContainer = document.createElement('div');
-    leftContainer.style.display = 'flex';
-    leftContainer.style.flexDirection = 'column';
-    leftContainer.style.justifyContent = 'space-between';
+    leftContainer.className = 'flex flex-col justify-between';
 
     // service
     const serviceDiv = document.createElement('div');
-    serviceDiv.style.fontWeight = 'bold';
     serviceDiv.textContent = serviceName;
+    serviceDiv.className = 'inter-regular font-semibold text-[18px]';
 
     // number
     const numberDiv = document.createElement('div');
-    numberDiv.style.fontSize = '24px';
-    numberDiv.style.fontWeight = 'bold';
     numberDiv.textContent = number;
+    numberDiv.className = 'hind-madurai-regular text-[18px] text-[#666]';
 
     leftContainer.appendChild(serviceDiv);
     leftContainer.appendChild(numberDiv);
 
     // time
     const timeDiv = document.createElement('div');
-    timeDiv.style.fontSize = '14px';
-    timeDiv.style.color = '#666';
+    timeDiv.className = 'text-[18px] hind-madurai-regular';
     timeDiv.textContent = time;
 
     entry.appendChild(leftContainer);

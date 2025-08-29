@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Emergency Service</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
@@ -14,27 +17,27 @@
     <nav class="bg-white text-black p-4 flex justify-between items-center">
         <div class="flex items-center space-x-2">
             <img src="./assets/logo.png" alt="Logo" class="w-10 h-10">
-            <span class="text-lg font-bold text-green-700">Emergency<br>Service</span>
-            
+            <span class="hind-madurai-regular font-bold text-lg text-green-700">Emergency<br>Service</span>
+
         </div>
         <div class="flex items-center space-x-4">
             <div class="flex items-center space-x-2 bg-[#41ff6b1a] p-2 rounded-full">
-                
-                <span id="heart-count">0</span>
+
+                <span id="heart-count" class="inter-regular font-black">0</span>
                 <img src="./assets/heart.png" alt="Heart" class="w-8 h-8">
             </div>
             <div class="flex items-center space-x-2 bg-[#41ff6b1a] p-2 rounded-full">
-                <span id="coin-count">100</span>
+                <span id="coin-count" class="inter-regular font-black">100</span>
                 <img src="./assets/coin.png" alt="Coin" class="w-8 h-8">
             </div>
-            <button id="copy-count" class="btn btn-md bg-[#00A63E] text-white rounded-full border-none">0 Copy</button>
+            <button id="copy-count" class="btn btn-md bg-[#00A63E] text-white rounded-full border-none inter-regular font-semibold">0 Copy</button>
         </div>
     </nav>
 
     <section class="bg-gradient-to-r from-[rgba(1.251827359199524,49.64006805419922,34.606834411621094,1)] via-[rgba(0,103,71,1)] via-50% to-[rgba(1,50,35,1)] text-white text-center py-3">
         <img src="./assets/logo-dark.png" alt="Logo" class="w-20 h-20 mx-auto">
-        <h1 class="text-3xl font-bold">Emergency Service Directory</h1>
-        <p class="py-3">Government Emergency Services at Your Fingertip - A Project by Government of the People's Republic of Bangladesh</p>
+        <h1 class="text-3xl hind-madurai-regular font-bold">Emergency Service Directory</h1>
+        <p class="py-3 hind-madurai-regular font-semibold">Government Emergency Services at Your Fingertip - A Project by Government of the People's Republic of Bangladesh</p>
     </section>
 
 
@@ -46,73 +49,73 @@
                     <div class="card bg-white p-8 rounded-lg shadow-md text-left relative flex flex-col">
                         <img src="./assets/emergency.png" alt="Ambulance" class="w-[60px] h-[60px] mb-2 bg-[#FFE3E2]    rounded-xl p-2">
                         <img src="./assets/hrt_blnk.svg" alt="Heart" class="w-6 h-6 absolute top-11 right-8">
-                        <h3 class="text-[24px] font-bold">National Emergency Number</h3>
-                        <h3 class="text-[18px] pb-3">National Emergency</h3>
-                        <p class="text-[32px] font-bold">999</p>
-                        <span class="text-[18px] badge bg-[#F2F2F2] rounded-full">All</span>
+                        <h3 class="text-[24px] hind-madurai-regular font-bold">National Emergency Number</h3>
+                        <h3 class="text-[18px] pb-3 roboto-regular text-[#666]">National Emergency</h3>
+                        <p class="text-[32px] font-bold roboto-regular">999</p>
+                        <span class="text-[18px] badge bg-[#F2F2F2] rounded-full hind-madurai-regular">All</span>
                         <div class="flex justify-start space-x-2 mt-auto">
-                            <button class="btn btn-sm border-gray-300 lg:w-[182.33px] lg:h-[40px] rounded-md"   onclick="copyNumber('999')">Copy</button>
-                            <button class="btn btn-sm bg-[#00A63E] text-white lg:w-[182.33px] lg:h-[40px] rounded-md"   onclick="makeCall('National Emergency Number', '999')">Call</button>
+                            <button class="btn btn-sm bg-white border-gray-300 lg:w-[182.33px] lg:h-[40px] rounded-md roboto-regular"   onclick="copyNumber('999')"><span class="solar--copy-linear"></span>Copy</button>
+                            <button class="btn btn-sm bg-[#00A63E] roboto-regular text-white lg:w-[182.33px] lg:h-[40px] rounded-md"   onclick="makeCall('National Emergency Number', '999')"><span class="proicons--call"></span>Call</button>
                         </div>
                     </div>
                     <div class="card bg-white p-8 rounded-lg shadow-md text-left relative flex flex-col">
                         <img src="./assets/police.png" alt="Ambulance" class="w-[60px] h-[60px] mb-2 bg-[#DFEFFF]    rounded-xl p-2">
                         <img src="./assets/hrt_blnk.svg" alt="Heart" class="w-6 h-6 absolute top-11 right-8">
-                        <h3 class="text-[24px] font-bold">Police Helpline Number</h3>
-                        <h3 class="text-[18px] pb-3">Police</h3>
-                        <p class="text-[32px] font-bold">999</p>
-                        <span class="text-[18px] badge bg-[#F2F2F2] rounded-full">Police</span>
+                        <h3 class="text-[24px] font-bold hind-madurai-regular">Police Helpline Number</h3>
+                        <h3 class="text-[18px] pb-3 roboto-regular text-[#666]">Police</h3>
+                        <p class="text-[32px] font-bold roboto-regular">999</p>
+                        <span class="text-[18px] badge bg-[#F2F2F2] rounded-full hind-madurai-regular">Police</span>
                         <div class="flex justify-start space-x-2 mt-auto">
-                            <button class="btn btn-sm border-gray-300 lg:w-[182.33px] lg:h-[40px] rounded-md"   onclick="copyNumber('999')">Copy</button>
-                            <button class="btn btn-sm bg-[#00A63E] text-white lg:w-[182.33px] lg:h-[40px] rounded-md"   onclick="makeCall('Police Helpline Number', '999')">Call</button>
+                            <button class="btn btn-sm bg-white border-gray-300 lg:w-[182.33px] lg:h-[40px] rounded-md roboto-regular"   onclick="copyNumber('999')"><span class="solar--copy-linear"></span>Copy</button>
+                            <button class="btn btn-sm bg-[#00A63E] roboto-regular text-white lg:w-[182.33px] lg:h-[40px] rounded-md"   onclick="makeCall('Police Helpline Number', '999')"><span class="proicons--call"></span>Call</button>
                         </div>
                     </div>
                     <div class="card bg-white p-8 rounded-lg shadow-md text-left relative flex flex-col">
                         <img src="./assets/fire-service.png" alt="Ambulance" class="w-[60px] h-[60px] mb-2 bg-[#FFE3E2]    rounded-xl p-2">
                         <img src="./assets/hrt_blnk.svg" alt="Heart" class="w-6 h-6 absolute top-11 right-8">
-                        <h3 class="text-[24px] font-bold">Fire Service Number</h3>
-                        <h3 class="text-[18px] pb-3">Fire Service</h3>
-                        <p class="text-[32px] font-bold">999</p>
-                        <span class="text-[18px] badge bg-[#F2F2F2] rounded-full">Fire</span>
+                        <h3 class="text-[24px] font-bold hind-madurai-regular">Fire Service Number</h3>
+                        <h3 class="text-[18px] pb-3 roboto-regular text-[#666]">Fire Service</h3>
+                        <p class="text-[32px] font-bold roboto-regular">999</p>
+                        <span class="text-[18px] badge bg-[#F2F2F2] rounded-full hind-madurai-regular">Fire</span>
                         <div class="flex justify-start space-x-2 mt-auto">
-                            <button class="btn btn-sm border-gray-300 lg:w-[182.33px] lg:h-[40px] rounded-md"   onclick="copyNumber('999')">Copy</button>
-                            <button class="btn btn-sm bg-[#00A63E] text-white lg:w-[182.33px] lg:h-[40px] rounded-md"   onclick="makeCall('Fire Service Number', '999')">Call</button>
+                            <button class="btn btn-sm bg-white border-gray-300 lg:w-[182.33px] lg:h-[40px] rounded-md roboto-regular"   onclick="copyNumber('999')"><span class="solar--copy-linear"></span>Copy</button>
+                            <button class="btn btn-sm bg-[#00A63E] text-white lg:w-[182.33px] lg:h-[40px] rounded-md roboto-regular"   onclick="makeCall('Fire Service Number', '999')"><span class="proicons--call"></span>Call</button>
                         </div>
                     </div>
                     <div class="card bg-white p-8 rounded-lg shadow-md text-left relative flex flex-col">
                         <img src="./assets/ambulance.png" alt="Ambulance" class="w-[60px] h-[60px] mb-2 bg-[#FFE3E2]    rounded-xl p-2">
                         <img src="./assets/hrt_blnk.svg" alt="Heart" class="w-6 h-6 absolute top-11 right-8">
-                        <h3 class="text-[24px] font-bold">Ambulance Service</h3>
-                        <h3 class="text-[18px] pb-3">Ambulance</h3>
-                        <p class="text-[32px] font-bold">1994-999999</p>
-                        <span class="text-[18px] badge bg-[#F2F2F2] rounded-full">Health</span>
+                        <h3 class="text-[24px] font-bold hind-madurai-regular">Ambulance Service</h3>
+                        <h3 class="text-[18px] pb-3 roboto-regular text-[#666]">Ambulance</h3>
+                        <p class="text-[32px] font-bold roboto-regular">1994-999999</p>
+                        <span class="text-[18px] badge bg-[#F2F2F2] rounded-full hind-madurai-regular">Health</span>
                         <div class="flex justify-start space-x-2 mt-auto">
-                            <button class="btn btn-sm border-gray-300 lg:w-[182.33px] lg:h-[40px] rounded-md"   onclick="copyNumber('1994-999999')">Copy</button>
-                            <button class="btn btn-sm bg-[#00A63E] text-white lg:w-[182.33px] lg:h-[40px] rounded-md"   onclick="makeCall('Ambulance Service', '1994-999999')">Call</button>
+                            <button class="btn btn-sm bg-white border-gray-300 lg:w-[182.33px] lg:h-[40px] rounded-md roboto-regular"   onclick="copyNumber('1994-999999')"><span class="solar--copy-linear"></span>Copy</button>
+                            <button class="btn btn-sm bg-[#00A63E] text-white lg:w-[182.33px] lg:h-[40px] rounded-md roboto-regular"   onclick="makeCall('Ambulance Service', '1994-999999')"><span class="proicons--call"></span>Call</button>
                         </div>
                     </div>
                     <div class="card bg-white p-8 rounded-lg shadow-md text-left relative flex flex-col">
                         <img src="./assets/emergency.png" alt="Ambulance" class="w-[60px] h-[60px] mb-2 bg-[#FFE3E2]    rounded-xl p-2">
                         <img src="./assets/hrt_blnk.svg" alt="Heart" class="w-6 h-6 absolute top-11 right-8">
-                        <h3 class="text-[24px] font-bold">Women & Child Helpline</h3>
-                        <h3 class="text-[18px] pb-3">Women & Child Helpline</h3>
-                        <p class="text-[32px] font-bold">109</p>
-                        <span class="text-[18px] badge bg-[#F2F2F2] rounded-full">Help</span>
+                        <h3 class="text-[24px] font-bold hind-madurai-regular">Women & Child Helpline</h3>
+                        <h3 class="text-[18px] pb-3 roboto-regular text-[#666]">Women & Child Helpline</h3>
+                        <p class="text-[32px] font-bold roboto-regular">109</p>
+                        <span class="text-[18px] badge bg-[#F2F2F2] rounded-full hind-madurai-regular">Help</span>
                         <div class="flex justify-start space-x-2 mt-auto">
-                            <button class="btn btn-sm border-gray-300 lg:w-[182.33px] lg:h-[40px] rounded-md"   onclick="copyNumber('109')">Copy</button>
-                            <button class="btn btn-sm bg-[#00A63E] text-white lg:w-[182.33px] lg:h-[40px] rounded-md"   onclick="makeCall('Women & Child Helpline', '109')">Call</button>
+                            <button class="btn btn-sm bg-white border-gray-300 lg:w-[182.33px] lg:h-[40px] rounded-md roboto-regular"   onclick="copyNumber('109')"><span class="solar--copy-linear"></span>Copy</button>
+                            <button class="btn btn-sm bg-[#00A63E] text-white lg:w-[182.33px] lg:h-[40px] rounded-md roboto-regular"   onclick="makeCall('Women & Child Helpline', '109')"><span class="proicons--call"></span>Call</button>
                         </div>
                     </div>
                     <div class="card bg-white p-8 rounded-lg shadow-md text-left relative flex flex-col">
                         <img src="./assets/emergency.png" alt="Ambulance" class="w-[60px] h-[60px] mb-2 bg-[#FFE3E2]    rounded-xl p-2">
                         <img src="./assets/hrt_blnk.svg" alt="Heart" class="w-6 h-6 absolute top-11 right-8">
-                        <h3 class="text-[24px] font-bold">Anti-Corruption Helpline</h3>
-                        <h3 class="text-[18px] pb-3">Anti-Corruption</h3>
-                        <p class="text-[32px] font-bold">106</p>
-                        <span class="text-[18px] badge bg-[#F2F2F2] rounded-full">Govt.</span>
+                        <h3 class="text-[24px] font-bold hind-madurai-regular">Anti-Corruption Helpline</h3>
+                        <h3 class="text-[18px] pb-3 roboto-regular text-[#666]">Anti-Corruption</h3>
+                        <p class="text-[32px] font-bold roboto-regular">106</p>
+                        <span class="text-[18px] badge bg-[#F2F2F2] rounded-full hind-madurai-regular">Govt.</span>
                         <div class="flex justify-start space-x-2 mt-auto">
-                            <button class="btn btn-sm border-gray-300 lg:w-[182.33px] lg:h-[40px] rounded-md"   onclick="copyNumber('106')">Copy</button>
-                            <button class="btn btn-sm bg-[#00A63E] text-white lg:w-[182.33px] lg:h-[40px] rounded-md"   onclick="makeCall('Anti-Corruption Helpline', '106')">Call</button>
+                            <button class="btn btn-sm bg-white border-gray-300 lg:w-[182.33px] lg:h-[40px] rounded-md roboto-regular"   onclick="copyNumber('106')"><span class="solar--copy-linear"></span>Copy</button>
+                            <button class="btn btn-sm bg-[#00A63E] text-white lg:w-[182.33px] lg:h-[40px] rounded-md roboto-regular"   onclick="makeCall('Anti-Corruption Helpline', '106')"><span class="proicons--call"></span>Call</button>
                         </div>
                     </div>
                 </div>
@@ -121,9 +124,9 @@
             <div class="lg:w-[400px] rounded-lg mr-8 ml-3 p-8 bg-white shadow-md">
                 <div class="flex flex-row justify-between items-center mb-4">
                     <h2 class="text-lg font-bold flex items-center">
-                        <img src="./assets/history.svg" alt="" class="mr-2">Call History
+                        <img src="./assets/history.svg" alt="" class="mr-2 roboto-regular font-medium">Call History
                     </h2>
-                    <button id="clear-history" class="btn btn-md btn-success rounded-full text-white bg-[#00A63E]">Clear</button>
+                    <button id="clear-history" class="btn btn-lg btn-success rounded-full inter-regular font-semibold text-white bg-[#00A63E]">Clear</button>
                 </div>
                 <div id="call-history" class="space-y-2"></div>
             </div>
@@ -133,3 +136,4 @@
     <script src="script.js"></script>
 </body>
 </html>
+
